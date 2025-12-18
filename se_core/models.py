@@ -187,7 +187,7 @@ class Temas(models.Model):
     nombre = models.CharField(max_length=100, unique=True)
     
     class Meta:
-        verbosa_name = "Tema"
+        verbose_name = "Tema"
         verbose_name_plural = "Temas"
         
     def __str__(self):

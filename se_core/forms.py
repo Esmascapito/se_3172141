@@ -2,7 +2,7 @@ from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
 from .models import Usuarios
 
-class UsuarioCreationForm(AdminUserCreationForm):
+class UsuarioCreationForm(UserCreationForm):
     class Meta:
         model = Usuarios
         fields = ('correo',)
